@@ -1,5 +1,11 @@
+import Home from "./components/pages/Home";
+
+import "./styles/fontawesome.min.css"
+import "./styles/main.css"
+import "./styles/normalize.css"
+
 function App() {
-  return <div>Projetos</div>;
+  return <Home />;
 }
 
 export default App;
