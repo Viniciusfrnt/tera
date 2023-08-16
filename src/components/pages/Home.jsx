@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../images/logo.svg";
 import { useNavigate } from "react-router-dom";
+import AppLoading from "../Organims/AppLoading";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function Home() {
   }, []);
 
   return isLoading ? (
-    <h1>Loading..</h1>
+    <AppLoading />
   ) : (
     <div className="home center">
       <div className="home__logo">
